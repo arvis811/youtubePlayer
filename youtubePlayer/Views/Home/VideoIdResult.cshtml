@@ -1,0 +1,20 @@
+﻿
+@model youtubePlayer.Models.YouTubeVideo
+@{
+    ViewBag.Title = "VideoIdResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VideoIdResult</title>
+</head>
+<body>
+    <div>
+        @ViewBag.Output;
+        @{ var myHtmlString = new HtmlString(ViewBag.Embed);}
+        @myHtmlString
+    </div>
+</body>
+</html>

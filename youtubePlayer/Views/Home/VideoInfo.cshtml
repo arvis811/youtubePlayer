@@ -1,0 +1,29 @@
+﻿@model youtubePlayer.Models.YouTubeVideo
+
+@{
+    ViewBag.Title = "VideoInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VideoInfo</title>
+</head>
+<body>
+
+    <form method="post" action="GetVideoInfo">
+        <table>
+            <tr>
+                <td>Enter Video ID:</td>
+                <td><input name="videoId" type="text" value="" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Get Video Info" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
